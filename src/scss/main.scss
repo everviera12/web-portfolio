@@ -1,0 +1,15 @@
+.nav__class {
+  justify-content: center;
+  font-size: 1.25rem;
+
+  .nav__links {
+    color: #82df6e;
+    transition: all 0.3s;
+    font-weight: bold;
+  }
+
+  .nav__links:hover {
+    color: #ffa500;
+    text-shadow: 1px 1px 10px #ffa500;
+  }
+}

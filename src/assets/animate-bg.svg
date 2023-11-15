@@ -1,0 +1,32 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+
+  <style>
+    @keyframes scale {
+    0%, 100% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.1);
+    }
+    }
+
+    #visual {
+    animation: scale 5s ease-in-out infinite;
+    }
+  </style>
+
+  <rect width="900" height="600" fill="#131313"></rect>
+  <g transform="translate(620 498)">
+    <path d="M0 -179.1L155.1 -89.6L155.1 89.6L0 179.1L-155.1 89.6L-155.1 -89.6Z" fill="#a772f8"></path>
+  </g>
+  <g transform="translate(231 360)">
+    <path d="M0 -134L116 -67L116 67L0 134L-116 67L-116 -67Z" fill="#a772f8"></path>
+  </g>
+  <g transform="translate(36 12)">
+    <path d="M0 -177L153.3 -88.5L153.3 88.5L0 177L-153.3 88.5L-153.3 -88.5Z" fill="#a772f8"></path>
+  </g>
+  <g transform="translate(741 108)">
+    <path d="M0 -94L81.4 -47L81.4 47L0 94L-81.4 47L-81.4 -47Z" fill="#a772f8"></path>
+  </g>
+</svg>

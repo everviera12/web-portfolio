@@ -1,0 +1,44 @@
+/* Media query para tablet */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  * {
+    transition: all 0.5s;
+  }
+
+  .nav__class {
+    background: #131313;
+    transition: all 0.3s;
+  }
+
+  .presentation {
+    padding-top: 10%;
+    // height: 180vh;
+
+    .home__container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .picture_container {
+      padding: 50px 0;
+    }
+  }
+
+  .about__me {
+    margin-top: 50%;
+
+    .info {
+      display: flex;
+      flex-direction: column-reverse;
+
+      img {
+        background: #813939;
+        width: 70%;
+        border-radius: 10px;
+      }
+      p {
+        width: 80%;
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
