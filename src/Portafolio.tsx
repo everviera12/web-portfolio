@@ -5,17 +5,19 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faListAlt } from "@fortawesome/free-regular-svg-icons";
+
 // import "./scss/responsive.scss";
 
 const Portafolio = () => {
   return (
     <>
-      <div className="presentation d-flex ">
+      <div className="presentation d-flex">
         <div className="container home__container">
           <div className="presentation__container">
             <h1>
               Frontend <br />
-              <span>
+              <span className="neon__text">
                 Devel<span className="letter__o">o</span>per
               </span>
             </h1>
@@ -30,9 +32,11 @@ const Portafolio = () => {
               <FontAwesomeIcon className="icon" icon={faGithub} />
               <FontAwesomeIcon className="icon" icon={faLinkedin} />
               <FontAwesomeIcon className="icon" icon={faInstagram} />
+              <span className="gap-2 d-flex fl align-items-center fs-2">
+                <FontAwesomeIcon className="icon__project" icon={faListAlt} />
+                Proyectos
+              </span>
             </div>
-
-            
           </div>
 
           <div className="picture_container">
@@ -64,11 +68,11 @@ const Portafolio = () => {
         </div>
       </div>
 
-      <div className="employes">
+      <div className="employes d-flex">
         <div className="employes__container container">
           <h1 className="text-center mt-5 fs-2 fw-bold">EXPERIENCIA LABORAL</h1>
 
-          <div className="logos d-flex">
+          <div className="logos">
             <div className="alleguard__container">
               <a href="https://alleguard.com/" target="_blank">
                 <img
@@ -99,6 +103,53 @@ const Portafolio = () => {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="skills d-flex">
+        <span className="fw-bold fs-1 text-center mt-4 mb-5">Mis Skills</span>
+
+        <div className="img__container">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png"
+            alt="logo Bootstrap"
+            className="bootstrap"
+          />
+          <img
+            src="https://www.svgrepo.com/show/349330/css3.svg"
+            alt="logo CSS"
+            className="css"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+            alt="logo HTML"
+            className="html"
+          />
+          <img
+            src="https://www.jennerstrand.se/wp-content/uploads/2023/06/JavaScript-logo.png"
+            alt="logo javascript"
+            className="javascript"
+          />
+          <img
+            src="https://miro.medium.com/v2/resize:fit:800/1*bc9pmTiyKR0WNPka2w3e0Q.png"
+            alt="logo nodejs"
+            className="nodejs"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"
+            alt="logo react"
+            className="react"
+          />
+          <img
+            src="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png"
+            alt="logo typescript"
+            className="typescript"
+          />
+          <img
+            src="https://www.svgrepo.com/show/330398/express.svg"
+            alt="logo express"
+            className="express"
+          />
         </div>
       </div>
     </>

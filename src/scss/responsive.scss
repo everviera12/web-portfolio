@@ -1,44 +1,288 @@
 /* Media query para tablet */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  * {
-    transition: all 0.5s;
-  }
+// @media only screen and (min-width: 768px) and (max-width: 992px) {
+//   * {
+//     transition: all 0.5s;
+//   }
 
+//   .nav__class {
+//     background: #131313;
+//     transition: all 0.3s;
+//   }
+
+//   .presentation {
+//     padding-top: 10%;
+//     // height: 180vh;
+
+//     .home__container {
+//       flex-direction: column;
+//       text-align: center;
+//     }
+
+//     .picture_container {
+//       padding: 50px 0;
+//     }
+//   }
+
+//   .about__me {
+//     margin-top: 50%;
+
+//     .info {
+//       display: flex;
+//       flex-direction: column-reverse;
+
+//       img {
+//         background: #813939;
+//         width: 70%;
+//         border-radius: 10px;
+//       }
+//       p {
+//         width: 80%;
+//         margin-bottom: 10%;
+//       }
+//     }
+//   }
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat&family=Roboto&family=Ubuntu&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+// animaciones
+//neon
+@keyframes neon {
+  0%,
+  19%,
+  21%,
+  24%,
+  30%,
+  63%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  22%,
+  32%,
+  64%,
+  65% {
+    opacity: 0;
+  }
+}
+
+/* Animación específica para la letra 'o' */
+@keyframes oNeon {
+  4%,
+  23%,
+  25%,
+  28%,
+  34%,
+  68%,
+  100% {
+    opacity: 1;
+  }
+  64%,
+  65%,
+  74%,
+  84%,
+  90%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Estilos para dispositivos pequeños aquí */
+@media only screen and (max-width: 600px) {
   .nav__class {
     background: #131313;
-    transition: all 0.3s;
   }
 
   .presentation {
-    padding-top: 10%;
-    // height: 180vh;
+    position: absolute;
+    transition: all 0.3s;
+    width: 100%;
+    z-index: 100;
+    height: 130vh;
+    align-items: center;
+    background-image: url("../assets/animate-bg.svg");
+    background-size: cover;
+    background-position: right;
 
     .home__container {
-      flex-direction: column;
-      text-align: center;
-    }
+      margin-top: 25%;
 
-    .picture_container {
-      padding: 50px 0;
+      .presentation__container {
+        color: #fff;
+
+        h1 {
+          font-size: 4rem;
+          // text-align: center;
+          margin-bottom: 15%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .neon__text {
+          color: #ffffffcc;
+          font-weight: bolder;
+          font-size: 3.5rem;
+          padding-left: 1%;
+          animation: neon 3s 1 ease-in-out;
+          text-shadow: 5px 5px 20px #a772f8, 0 0 20px #a772f8, 0 0 30px #a772f8;
+        }
+
+        .letter__o {
+          animation: oNeon 2s 1 ease-in-out;
+        }
+
+        .sobre__mi {
+          font-size: 1.5rem;
+          margin: 10% 0;
+          display: flex;
+          padding-left: 5%;
+        }
+
+        .contact__info {
+          display: flex;
+          gap: 8%;
+          margin: 10% 0;
+          justify-content: center;
+          font-size: 2rem;
+          align-items: center;
+
+          .icon__project,
+          .icon {
+            cursor: pointer;
+            transition: all 0.3s;
+          }
+
+          .icon__project:hover,
+          .icon:hover {
+            color: #ffa500;
+          }
+
+          .icon__project::after {
+            color: #fff;
+            display: block;
+            content: "ve mis proyectos";
+          }
+        }
+      }
+
+      .picture_container {
+        display: flex;
+        justify-content: center;
+        // padding: ;
+
+        img {
+          width: 65%;
+          // height: 50%;
+          border-radius: 2%;
+          margin-bottom: 5%;
+        }
+      }
     }
   }
 
   .about__me {
-    margin-top: 50%;
+    position: relative;
+    top: 125vh;
+    padding: 30% 0 5% 0;
+    background-image: url("../assets/bg-wave.svg");
+    background-size: cover;
+    transition: all 0.3s;
 
-    .info {
-      display: flex;
-      flex-direction: column-reverse;
+    .about__me__container {
+      position: relative;
 
-      img {
-        background: #813939;
-        width: 70%;
-        border-radius: 10px;
-      }
-      p {
-        width: 80%;
-        margin-bottom: 10%;
+      .info {
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+
+        p {
+          padding-bottom: 10%;
+          font-size: 1.25rem;
+        }
+
+        img {
+          width: 300px;
+          border-radius: 5px;
+        }
       }
     }
   }
+
+  .employes {
+    width: 100%;
+    position: absolute;
+    top: 240%;
+    padding-top: 6%;
+    transition: all 0.3s;
+
+    .logos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10% 0;
+      gap: 50px;
+
+      img {
+        border-radius: 7px;
+      }
+    }
+  }
+
+  .skills {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    top: 350%;
+    align-items: center;
+
+    .img__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 60px;
+      row-gap: 50px;
+      margin-bottom: 10%;
+
+      img {
+        max-width: 90px;
+        margin: 5% 0;
+        transition: all 0.3s;
+      }
+    }
+
+    .bootstrap {
+      filter: drop-shadow(5px 1px 10px #8a0afc);
+    }
+    .css {
+      filter: drop-shadow(5px 1px 10px #2965f1);
+    }
+    .html {
+      filter: drop-shadow(5px 1px 10px #ef652a);
+    }
+    .javascript {
+      filter: drop-shadow(5px 1px 10px #f0dc4e);
+    }
+    .nodejs {
+      filter: drop-shadow(5px 1px 10px #8bc500);
+    }
+    .react {
+      filter: drop-shadow(1px 1px 1px #61dcfbab);
+    }
+    .typescript {
+      filter: drop-shadow(5px 1px 10px #017acbad);
+    }
+    .express {
+      filter: drop-shadow(1px 1px 2px #00000091);
+    }
+  }
+}
+
+/* Estilos para tabletas aquí */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
 }

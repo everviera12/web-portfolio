@@ -13,14 +13,14 @@ import "../scss/Portafolio.scss";
 const NavBar = () => {
   return (
     <>
-      <Navbar expand="lg" className="w-100 z-1 position-absolute nav__class ">
+      <Navbar expand="lg" className="w-100 position-absolute nav__class ">
         <Container>
           <Navbar.Brand as={Link} to="/" className="nav__links">
             LOGO
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="nav__container justify-content-end text-center w-100 align-items-center gap-3">
+            <Nav className="nav__container z-1  justify-content-end text-center w-100 align-items-center gap-3">
               <Nav.Link as={Link} to="/" className="nav__links">
                 Home
               </Nav.Link>
