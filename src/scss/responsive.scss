@@ -188,7 +188,7 @@
   .about__me {
     position: relative;
     top: 125vh;
-    padding: 30% 0 5% 0;
+    padding: 20% 0 5% 0;
     background-image: url("../assets/bg-wave.svg");
     background-size: cover;
     transition: all 0.3s;
@@ -209,6 +209,10 @@
         img {
           width: 300px;
           border-radius: 5px;
+        }
+
+        span{
+          font-size: 1.75rem;
         }
       }
     }

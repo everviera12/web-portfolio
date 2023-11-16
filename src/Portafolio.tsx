@@ -64,6 +64,8 @@ const Portafolio = () => {
               dar vida a conceptos creativos y mejorar la experiencia del
               usuario.
             </p>
+
+            <span className="fw-bold mb-3">Un poco de mi</span>
           </div>
         </div>
       </div>
