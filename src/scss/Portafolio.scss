@@ -2,6 +2,23 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
 }
 
 // animaciones
@@ -54,7 +71,6 @@
 //   align-items: center;
 //   background-image: url("../assets/animate-bg.svg");
 //   background-size: cover;
-//   // background-position: right;
 
 //   .home__container {
 //     position: relative;
@@ -96,14 +112,17 @@
 //         display: flex;
 //         gap: 5%;
 //         margin-top: 5%;
+//         align-items: center;
 //         justify-content: center;
 //         font-size: 2rem;
 
+//         span,
 //         .icon {
 //           cursor: pointer;
 //           transition: all 0.3s;
 //         }
 
+//         span:hover,
 //         .icon:hover {
 //           color: #ffa500;
 //         }
@@ -132,21 +151,30 @@
 //   position: absolute;
 //   width: 100%;
 //   top: 100vh;
-//   padding: 2% 0;
+//   padding-top: 2%;
 //   background-image: url("../assets/bg-wave.svg");
-//   background-size: 400%;
-//   background-attachment: fixed;
+//   background-size: 300%;
 //   align-items: center;
 
 //   .about__me__container {
+//     height: 70vh;
+//     margin-top: 6%;
+//     align-items: center;
+//     display: flex;
+
 //     .info {
 //       width: 100%;
 //       align-items: center;
 //       display: flex;
-//       gap: 10%;
+//       flex-direction: column-reverse;
+//       gap: 10px;
 
 //       p {
-//         font-size: 1.5rem;
+//         font-size: 1.25rem;
+//       }
+
+//       img {
+//         border-radius: 8px;
 //       }
 //     }
 //   }
@@ -155,10 +183,13 @@
 // .employes {
 //   position: absolute;
 //   width: 100%;
-//   top: 165%;
+//   margin: 5% 0;
+//   top: 190%;
 //   // height: 100vh;
+//   align-items: center;
 
 //   .logos {
+//     display: flex;
 //     margin: 5% 0;
 //     align-items: center;
 //     justify-content: space-around;
@@ -176,48 +207,50 @@
 // }
 
 // .skills {
-//   display: flex;
-//   gap: 5%;
-//   // flex-wrap: wrap;
-//   // align-items: center;
+//   flex-direction: column;
+//   align-items: center;
 //   width: 100%;
-//   text-align: center;
-//   top: 220%;
-//   justify-content: center;
+//   top: 250%;
 //   position: absolute;
+//   background: #000;
 
-//   img {
-//     max-width: 100px;
-//     margin: 5% 0;
-//     transition: all .3s;
-//   }
+//   .img__container {
+//     display: flex;
+//     align-items: center;
+//     gap: 30px;
 
-//   img:hover {
-//     transform: translateY(-10%);
-//   }
+//     img {
+//       max-width: 100px;
+//       margin: 0 0 5% 0;
+//       transition: all 0.3s;
+//     }
+//     img:hover {
+//       transform: translateY(-10%);
+//     }
 
-//   .bootstrap {
-//     filter: drop-shadow(5px 1px 10px #8a0afc);
-//   }
-//   .css {
-//     filter: drop-shadow(5px 1px 10px #2965f1);
-//   }
-//   .html {
-//     filter: drop-shadow(5px 1px 10px #ef652a);
-//   }
-//   .javascript {
-//     filter: drop-shadow(5px 1px 10px #f0dc4e);
-//   }
-//   .nodejs {
-//     filter: drop-shadow(5px 1px 10px #8bc500);
-//   }
-//   .react {
-//     filter: drop-shadow(1px 1px 1px #61dcfbab);
-//   }
-//   .typescript {
-//     filter: drop-shadow(5px 1px 10px #017acbad);
-//   }
-//   .express {
-//     filter: drop-shadow(1px 1px 2px #00000091);
+//     .bootstrap {
+//       filter: drop-shadow(5px 1px 10px #8a0afc);
+//     }
+//     .css {
+//       filter: drop-shadow(5px 1px 10px #2965f1);
+//     }
+//     .html {
+//       filter: drop-shadow(5px 1px 10px #ef652a);
+//     }
+//     .javascript {
+//       filter: drop-shadow(5px 1px 10px #f0dc4e);
+//     }
+//     .nodejs {
+//       filter: drop-shadow(5px 1px 10px #8bc500);
+//     }
+//     .react {
+//       filter: drop-shadow(1px 1px 1px #61dcfbab);
+//     }
+//     .typescript {
+//       filter: drop-shadow(5px 1px 10px #017acbad);
+//     }
+//     .express {
+//       filter: drop-shadow(1px 1px 2px #00000091);
+//     }
 //   }
 // }

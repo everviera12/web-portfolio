@@ -1,3 +1,5 @@
+// import { useState, useEffect } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -32,7 +34,7 @@ const Portafolio = () => {
               <FontAwesomeIcon className="icon" icon={faGithub} />
               <FontAwesomeIcon className="icon" icon={faLinkedin} />
               <FontAwesomeIcon className="icon" icon={faInstagram} />
-              <span className="gap-2 d-flex fl align-items-center fs-2">
+              <span className="gap-2 d-flex fl align-items-center fs-3">
                 <FontAwesomeIcon className="icon__project" icon={faListAlt} />
                 Proyectos
               </span>
@@ -65,14 +67,14 @@ const Portafolio = () => {
               usuario.
             </p>
 
-            <span className="fw-bold mb-3">Un poco de mi</span>
+            <h1 className="fw-bold mb-3">Un poco de mi</h1>
           </div>
         </div>
       </div>
 
       <div className="employes d-flex">
         <div className="employes__container container">
-          <h1 className="text-center mt-5 fs-2 fw-bold">EXPERIENCIA LABORAL</h1>
+          <h1 className="text-center fs-2 fw-bold">EXPERIENCIA LABORAL</h1>
 
           <div className="logos">
             <div className="alleguard__container">
@@ -88,8 +90,8 @@ const Portafolio = () => {
             <div className="tft__container">
               <a href="https://thefudtrailer.com/" target="_blank">
                 <img
-                  src=" https://yt3.googleusercontent.com/W3XIX-nlKUdhjxXqDSRjTQa3Rfqfs4BtEgxIGH9WlIiC-lqJEIZfst1FcJBOEqgEZfobaxGigg=s900-c-k-c0x00ffffff-no-rj"
-                  alt="alleguard logo"
+                  src="https://yt3.googleusercontent.com/W3XIX-nlKUdhjxXqDSRjTQa3Rfqfs4BtEgxIGH9WlIiC-lqJEIZfst1FcJBOEqgEZfobaxGigg=s900-c-k-c0x00ffffff-no-rj"
+                  alt="tftd logo"
                   width={"150px"}
                 />
               </a>
@@ -99,7 +101,7 @@ const Portafolio = () => {
               <a href="https://www.legionagency.mx/" target="_blank">
                 <img
                   src="https://scontent.fntr5-1.fna.fbcdn.net/v/t39.30808-6/290637097_142550888435703_3410872608351955777_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeECNF8B0PuReGUh7yPtv4NJ3tyiV-ztw57e3KJX7O3DnjnSY33Z3e8PJN35SwllPHjB_GZwF44QIdB2NHvarNqv&_nc_ohc=94UF2jLEsaYAX86osvl&_nc_ht=scontent.fntr5-1.fna&oh=00_AfDU1Fp6f0ch-zogA3l_dQKpLT_gqcLvMUAxHxUsyGS2Tw&oe=655887C6"
-                  alt="alleguard logo"
+                  alt="legionagency logo"
                   width={"150px"}
                 />
               </a>
@@ -109,7 +111,7 @@ const Portafolio = () => {
       </div>
 
       <div className="skills d-flex">
-        <span className="fw-bold fs-1 text-center mt-4 mb-5">Mis Skills</span>
+        <h1 className="fw-bold text-center mt-4 mb-5">Mis Skills</h1>
 
         <div className="img__container">
           <img
@@ -152,6 +154,31 @@ const Portafolio = () => {
             alt="logo express"
             className="express"
           />
+        </div>
+      </div>
+
+      <div className="contact__form d-flex">
+        <div className="form__container container">
+          <h1 className="text-center mt-4">CONTACTAME</h1>
+          <form>
+            <div className="form__items">
+              <label htmlFor="name">Nombre</label>
+              <input type="text" id="name" name="name" required />
+
+              <label htmlFor="description">Mensaje</label>
+              <textarea
+                id="description"
+                name="description"
+                rows={5}
+                cols={40}
+                required
+              />
+            </div>
+
+            <button className="button__submit" type="submit" value="Enviar">
+              Enviar
+            </button>
+          </form>
         </div>
       </div>
     </>
